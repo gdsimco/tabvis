@@ -17,7 +17,9 @@ function activate(context) {
 
 	vscode.window.tabGroups.onDidChangeTabs(e => {
 		if (e && e.opened && (e.opened.length > 0 || e.changed.length > 0)) {
-			setcolor.setColor(vscode.window.activeTextEditor.document.fileName);
+			setTimeout(() => {
+				setcolor.setColor(vscode.window.activeTextEditor.document.fileName);
+			}, 1);
 		}
 	});
 }

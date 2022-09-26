@@ -37,5 +37,8 @@
     "mocha": "^10.0.0",
     "pastel-color": "^1.0.3",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "invert-color": "^2.0.0"
   }
 }
